@@ -1,0 +1,105 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#f8f1eb" />
+    <meta name="description" content="Um cantinho feito com carinho, só para nós dois." />
+    <title>Um pedacinho de nós</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600&family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,500;1,600&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="topbar">
+      <a class="wordmark" href="#inicio" aria-label="Voltar ao início">nós <span>dois</span></a>
+      <nav aria-label="Navegação principal">
+        <a href="#carta">A carta</a><a href="#momentos">Nossos momentos</a><a href="#quebra-cabeca">Quebra-cabeça</a>
+      </nav>
+      <button class="music-button" id="music-toggle" type="button" aria-pressed="false" aria-expanded="false" aria-controls="music-popover"><span class="music-icon">♫</span><span id="music-label">Só Nós Dois</span></button>
+      <div class="music-popover" id="music-popover" hidden>
+        <p>nossa música <span>♡</span></p>
+        <div id="spotify-player"></div>
+        <a href="https://open.spotify.com/track/3yiXy2ydZP9ZpsYxvUI6sO" target="_blank" rel="noopener noreferrer">abrir no Spotify ↗</a>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero" id="inicio">
+        <div class="hero-copy">
+          <p class="eyebrow"><span class="tiny-heart">♡</span> feito com carinho, para você</p>
+          <h1>Meu lugar<br />favorito é <em>com você.</em></h1>
+          <p class="hero-intro">Um cantinho para guardar um pouco de tudo que eu amo na nossa história.</p>
+          <a class="text-link" href="#carta">Tem uma coisinha para você <span>↓</span></a>
+        </div>
+        <div class="hero-art" aria-label="Espaço reservado para uma foto de vocês">
+          <div class="sun-wash"></div>
+          <img class="hero-photo" src="assets/capa.jpg" alt="Nós dois juntos no espelho" />
+          <span class="scribble">desde que é você</span>
+          <span class="floating-heart heart-one">♡</span><span class="floating-heart heart-two">♡</span>
+          <span class="hero-caption">um dia comum<br />que virou especial</span>
+        </div>
+        <div class="hero-bottom"><span>uma pequena coleção de nós</span><span>01 — sempre</span></div>
+      </section>
+
+      <section class="letter section-pad" id="carta">
+        <div class="section-kicker">01 <span>·</span> algumas palavras</div>
+        <div class="letter-card">
+          <div class="letter-stamp">para<br />meu amor <span>♡</span></div>
+          <div class="letter-content">
+            <div class="letter-body">
+              <p>Me apaixonei por você, mas não foi apenas pela sua aparência ou por qualquer beleza externa que o mundo tanto valoriza. Não foi por causa do seu corpo, por mais lindo que seja, nem por nada superficial que os olhos possam admirar. Eu me apaixonei pela sua essência, pela pessoa maravilhosa que você é, pelo seu jeito único de enxergar o mundo, pelos pequenos detalhes que tornam sua existência tão especial.</p>
+              <p>Desde o primeiro momento em que te vi, eu soube que havia algo diferente em você. Não precisei te tocar ou ouvir sua voz para sentir essa conexão, esse laço invisível que nos une. Foi como se, naquele instante, meu coração tivesse escolhido o seu, como se ele soubesse que você era a pessoa que ele estava esperando durante todo esse tempo.</p>
+              <p>Eu me apaixonei pelo seu sorriso, aquele que ilumina até os dias mais cinzentos. Me apaixonei pela sua risada contagiante, que faz o mundo ao meu redor desaparecer, deixando apenas nós dois.</p>
+              <p>Me apaixonei pela sua alma, tão linda, gentil e cheia de luz, que me faz querer ser uma pessoa melhor todos os dias.</p>
+              <p>Literalmente, tudo em você me encanta. Cada olhar, cada palavra, cada gesto. Você é o meu lugar seguro, o meu porto em meio às tempestades, a paz que o meu coração sempre buscou. Não há outra pessoa no mundo que eu queira ao meu lado.</p>
+              <p>Eu só quero você. Unicamente você. Especificamente você. Você é o meu sonho realizado, minha escolha constante, o amor que eu prometo cuidar e proteger para sempre.</p>
+              <p>Por favor, nunca esqueça disso: eu te escolhi e te escolheria mil vezes, todos os dias, em todas as vidas. Você é a minha certeza mais bonita, e eu sou eternamente grato por ter o privilégio de te amar pessoa.</p>
+            </div>
+          </div>
+          <span class="letter-flower">✳</span>
+        </div>
+      </section>
+
+      <section class="memories section-pad" id="momentos">
+        <div class="section-heading">
+          <div><div class="section-kicker">02 <span>·</span> nossos momentos</div><h2>Pequenos instantes,<br /><em>grandes pedaços de nós.</em></h2></div>
+          <p>Tem coisa que a câmera registra.<br />E tem coisa que fica guardada aqui.</p>
+        </div>
+        <div class="photo-grid">
+          <figure class="memory memory-tall"><img class="memory-photo" src="assets/foto-01.jpg" alt="Nós dois fazendo careta para a foto no espelho" loading="lazy" /><figcaption><span>nossas melhores caretas</span><span>♡</span></figcaption></figure>
+          <figure class="memory memory-wide"><img class="memory-photo" src="assets/foto-04.jpg" alt="Nós dois juntos na praia" loading="lazy" /><figcaption><span>um dia bom na praia</span><span>♡</span></figcaption></figure>
+          <figure class="memory memory-small"><img class="memory-photo photo-low-angle" src="assets/foto-02.jpg" alt="Uma selfie espontânea nossa" loading="lazy" /><figcaption><span>uma foto bem nossa</span><span>♡</span></figcaption></figure>
+          <figure class="memory memory-small second"><img class="memory-photo photo-dog" src="assets/foto-03.jpg" alt="Um momento carinhoso com nosso cachorro" loading="lazy" /><figcaption><span>carinho em dose dupla</span><span>♡</span></figcaption></figure>
+        </div>
+        <div class="booth-wrap">
+          <div class="booth-heading"><div class="section-kicker">um rolinho de filme</div><h3>Cabine de nós dois</h3><p>Quatro poses, um montão de saudade boa.</p></div>
+          <div class="booth-strip" aria-label="Faixa de fotos estilo cabine fotográfica">
+            <div class="booth-frame"><img src="assets/foto-01.jpg" alt="" loading="lazy" /></div>
+            <div class="booth-frame"><img src="assets/foto-04.jpg" alt="" loading="lazy" /></div>
+            <div class="booth-frame"><img class="photo-low-angle" src="assets/foto-02.jpg" alt="" loading="lazy" /></div>
+            <div class="booth-frame"><img class="photo-dog" src="assets/foto-03.jpg" alt="" loading="lazy" /></div>
+            <div class="booth-footer">PHOTO BOOTH · VOCÊ + EU · PARA SEMPRE</div>
+          </div>
+          <span class="booth-doodle">xoxo</span>
+        </div>
+      </section>
+
+      <section class="puzzle-section section-pad" id="quebra-cabeca">
+        <div class="section-kicker">03 <span>·</span> uma brincadeira</div>
+        <div class="puzzle-layout">
+          <div class="puzzle-copy"><p class="script-note">uma pecinha de cada vez</p><h2>Nosso amor<br />também é <em>encaixe.</em></h2><p>Toque em duas peças para trocar de lugar. Quando tudo estiver no lugar, aparece a nossa foto.</p><button class="outline-button" id="shuffle-puzzle" type="button">Embaralhar de novo <span>↻</span></button><p class="puzzle-status" id="puzzle-status" aria-live="polite">Dica: comece pelos cantinhos ♡</p></div>
+          <div class="puzzle-board" id="puzzle-board" aria-label="Quebra-cabeça de uma foto de vocês"></div>
+        </div>
+      </section>
+
+      <section class="ending">
+        <span class="ending-heart">♡</span><p>e ainda é só o começo</p><h2>Que sorte a minha<br />ser <em>nós.</em></h2><span class="ending-sparkle">✳</span>
+      </section>
+    </main>
+
+    <footer><a class="wordmark" href="#inicio">nós <span>dois</span></a><span>feito com amor, para ser nosso.</span><a href="#inicio">voltar ao começo ↑</a></footer>
+    <script src="script.js"></script>
+  </body>
+</html>
